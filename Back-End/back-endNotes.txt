@@ -1,0 +1,21 @@
+After setting up the middleware we have our uri which is our database uri, which we get from the mongodb atlas dashboard.
+mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true }) this uri is where our database is stored, this is jow the connection is started
+
+{ useNewUrlParser: true, useCreateIndex: true } put this everytime there is a need to deal with the connection with mongodb.
+
+create an env file to set up the environmental variable.
+
+serch in the command pallette for MongoDB:Connect and connect with the connection string
+
+We will create our database schema using mongoose.
+
+After creating all the dchemas we have to create the api inpoint routs, so the server can be used to perform the CRUD operations.
+So inside the back-end folder we are gonna create another folder called routes.
+and inside that files exercises and users
+
+We also want to tell the server about the files thart we created, Require the files and use the files
+const exercisesRouter = require('./routes/exercises');
+const usersRouter = require('./routes/users');
+
+app.use('/exercises', exercisesRouter);
+app.use('/users', usersRouter);

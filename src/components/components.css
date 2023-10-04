@@ -1,0 +1,20 @@
+/* ExercisesList.css */
+.text {
+    margin-top: 50px;
+    margin-left: 1px;
+    padding: 0px;
+}
+
+.brand{
+    padding-left: 8px;
+}
+
+.submitButton {
+    margin-top: 10px;
+}
+
+.label {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
